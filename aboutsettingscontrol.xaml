@@ -1,0 +1,560 @@
+﻿Signature:      	"MSBAML"
+Reader Version: 	[0x0000, 0x0060]
+Updater Version:	[0x0000, 0x0060]
+Writer Version: 	[0x0000, 0x0060]
+Record #:       	554
+
+DocumentStart [LoadAsync=false, MaxAsyncRecords=0xffffffff, DebugBaml=false]
+	AssemblyInfo [AssemblyId=0x0000, AssemblyFullName="Bluestacks, Version=4.240.20.1016, Culture=neutral, PublicKeyToken=null"]
+	PIMapping [XmlNamespace="clr-namespace:BlueStacks.BlueStacksUI", ClrNamespace="BlueStacks.BlueStacksUI", AssemblyId=0x0000]
+	AssemblyInfo [AssemblyId=0x0001, AssemblyFullName="HD-Common, Version=4.240.20.1016, Culture=neutral, PublicKeyToken=null"]
+	PIMapping [XmlNamespace="clr-namespace:BlueStacks.Common;assembly=HD-Common", ClrNamespace="BlueStacks.Common", AssemblyId=0x0001]
+	TypeInfo [TypeId=0x0000, AssemblyId=0x0000, TypeFullName="BlueStacks.BlueStacksUI.AboutSettingsControl"]
+	ElementStart [TypeId=0x0000, Flags=0x00]
+		AssemblyInfo [AssemblyId=0x0002, AssemblyFullName="WindowsFormsIntegration, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"]
+		AssemblyInfo [AssemblyId=0x0003, AssemblyFullName="PresentationCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"]
+		AssemblyInfo [AssemblyId=0x0004, AssemblyFullName="WindowsBase, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"]
+		AssemblyInfo [AssemblyId=0x0005, AssemblyFullName="PresentationFramework, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"]
+		XmlnsProperty [Prefix="", XmlNamespace="http://schemas.microsoft.com/winfx/2006/xaml/presentation", AssemblyIds={0x0002, 0x0003, 0x0004, 0x0005}]
+		XmlnsProperty [Prefix="x", XmlNamespace="http://schemas.microsoft.com/winfx/2006/xaml", AssemblyIds={0x0003, 0x0004, 0x0005}]
+		XmlnsProperty [Prefix="mc", XmlNamespace="http://schemas.openxmlformats.org/markup-compatibility/2006", AssemblyIds={0x0003, 0x0004, 0x0005}]
+		XmlnsProperty [Prefix="d", XmlNamespace="http://schemas.microsoft.com/expression/blend/2008", AssemblyIds={0x0003, 0x0004, 0x0005}]
+		XmlnsProperty [Prefix="local", XmlNamespace="clr-namespace:BlueStacks.BlueStacksUI", AssemblyIds={0x0003, 0x0004, 0x0005}]
+		XmlnsProperty [Prefix="Common", XmlNamespace="clr-namespace:BlueStacks.Common;assembly=HD-Common", AssemblyIds={0x0003, 0x0004, 0x0005}]
+		AttributeInfo [AttributeId=0x0000, OwnerTypeId=0xff1e, AttributeUsage=0x00, Name="DataContext"]
+		PropertyComplexStart [AttributeId=0x0000]
+			ElementStart [TypeId=0xffec, Flags=0x00]
+				TypeInfo [TypeId=0x0001, AssemblyId=0x0001, TypeFullName="BlueStacks.Common.BlueStacksUIBinding"]
+				AttributeInfo [AttributeId=0x0001, OwnerTypeId=0x0001, AttributeUsage=0x00, Name="Instance"]
+				AttributeInfo [AttributeId=0x0002, OwnerTypeId=0xffec, AttributeUsage=0x00, Name="Source"]
+				PropertyWithExtension [AttributeId=0x0002, Flags=0x025a, ValueId=0x0001]
+			ElementEnd
+		PropertyComplexEnd
+		ContentProperty [AttributeId=0xfff2]
+		ElementStart [TypeId=0xff02, Flags=0x00]
+			PropertyWithConverter [AttributeId=0xffcf, Value="30,25,20,25", ConverterTypeId=0xfd71]
+			AttributeInfo [AttributeId=0x0003, OwnerTypeId=0xff02, AttributeUsage=0x00, Name="RowDefinitions"]
+			PropertyListStart [AttributeId=0x0003]
+				ElementStart [TypeId=0xfde3, Flags=0x00]
+					PropertyWithConverter [AttributeId=0xffa2, Value="Auto", ConverterTypeId=0xff00]
+				ElementEnd
+				ElementStart [TypeId=0xfde3, Flags=0x00]
+					PropertyWithConverter [AttributeId=0xffa2, Value="Auto", ConverterTypeId=0xff00]
+				ElementEnd
+				ElementStart [TypeId=0xfde3, Flags=0x00]
+					PropertyWithConverter [AttributeId=0xffa2, Value="Auto", ConverterTypeId=0xff00]
+				ElementEnd
+				ElementStart [TypeId=0xfde3, Flags=0x00]
+					PropertyWithConverter [AttributeId=0xffa2, Value="Auto", ConverterTypeId=0xff00]
+				ElementEnd
+				ElementStart [TypeId=0xfde3, Flags=0x00]
+					PropertyWithConverter [AttributeId=0xffa2, Value="Auto", ConverterTypeId=0xff00]
+				ElementEnd
+			PropertyListEnd
+			ContentProperty [AttributeId=0xff2b]
+			ElementStart [TypeId=0xfea6, Flags=0x00]
+				PropertyWithConverter [AttributeId=0xffc1, Value="0", ConverterTypeId=0xfec5]
+				PropertyWithConverter [AttributeId=0xffd0, Value="Left", ConverterTypeId=0xff3d]
+				PropertyWithConverter [AttributeId=0xffcf, Value="-5,0,0,0", ConverterTypeId=0xfd71]
+				ContentProperty [AttributeId=0xfff2]
+				ElementStart [TypeId=0xfd82, Flags=0x00]
+					PropertyWithConverter [AttributeId=0xff94, Value="Normal", ConverterTypeId=0xff22]
+					PropertyWithConverter [AttributeId=0xff97, Value="16", ConverterTypeId=0xff28]
+					AttributeInfo [AttributeId=0x0004, OwnerTypeId=0xfd82, AttributeUsage=0x00, Name="Padding"]
+					PropertyWithConverter [AttributeId=0x0004, Value="0", ConverterTypeId=0xfd71]
+					PropertyComplexStart [AttributeId=0xff92]
+						ElementStart [TypeId=0xffec, Flags=0x00]
+							AttributeInfo [AttributeId=0x0005, OwnerTypeId=0xffec, AttributeUsage=0x00, Name="Path"]
+							PropertyWithConverter [AttributeId=0x0005, Value="LocaleModel.[STRING_ABOUT_BLUESTACKS]", ConverterTypeId=0xfe14]
+							AttributeInfo [AttributeId=0x0006, OwnerTypeId=0xffeb, AttributeUsage=0x00, Name="FallbackValue"]
+							PropertyWithConverter [AttributeId=0x0006, Value="About BlueStacks", ConverterTypeId=0xfd99]
+						ElementEnd
+					PropertyComplexEnd
+					PropertyComplexStart [AttributeId=0xff93]
+						ElementStart [TypeId=0xffec, Flags=0x00]
+							PropertyWithConverter [AttributeId=0x0005, Value="ColorModel.[SettingsWindowTabMenuItemLegendForeground]", ConverterTypeId=0xfe14]
+						ElementEnd
+					PropertyComplexEnd
+				ElementEnd
+			ElementEnd
+			ElementStart [TypeId=0xff02, Flags=0x00]
+				PropertyWithConverter [AttributeId=0xffc1, Value="1", ConverterTypeId=0xfec5]
+				PropertyWithConverter [AttributeId=0xffcf, Value="0,15,0,0", ConverterTypeId=0xfd71]
+				ContentProperty [AttributeId=0xff2b]
+				ElementStart [TypeId=0xff02, Flags=0x00]
+					ConnectionId [ConnectionId=0x00000001]
+					AttributeInfo [AttributeId=0x0007, OwnerTypeId=0xff02, AttributeUsage=0x03, Name="Name"]
+					PropertyWithConverter [AttributeId=0x0007, Value="mPoweredByBSGrid", ConverterTypeId=0xfd99]
+					PropertyWithConverter [AttributeId=0xff79, Value="Hidden", ConverterTypeId=0xff3d]
+					ContentProperty [AttributeId=0xff2b]
+					TypeInfo [TypeId=0x0002, AssemblyId=0x0001, TypeFullName="BlueStacks.Common.CustomPictureBox"]
+					ElementStart [TypeId=0x0002, Flags=0x00]
+						AttributeInfo [AttributeId=0x0008, OwnerTypeId=0x0002, AttributeUsage=0x00, Name="ImageName"]
+						PropertyWithConverter [AttributeId=0x0008, Value="powered_by_bs.png", ConverterTypeId=0xfd99]
+						PropertyWithConverter [AttributeId=0xffd0, Value="Left", ConverterTypeId=0xff3d]
+						PropertyWithConverter [AttributeId=0xffc7, Value="60", ConverterTypeId=0xfea4]
+						PropertyWithConverter [AttributeId=0xffd1, Value="60", ConverterTypeId=0xfea4]
+					ElementEnd
+				ElementEnd
+				ElementStart [TypeId=0xff02, Flags=0x00]
+					ConnectionId [ConnectionId=0x00000002]
+					PropertyWithConverter [AttributeId=0x0007, Value="mBSIconAndNameGrid", ConverterTypeId=0xfd99]
+					AttributeInfo [AttributeId=0x0009, OwnerTypeId=0xff02, AttributeUsage=0x00, Name="ColumnDefinitions"]
+					PropertyListStart [AttributeId=0x0009]
+						ElementStart [TypeId=0xffa6, Flags=0x00]
+							PropertyWithConverter [AttributeId=0xfff3, Value="Auto", ConverterTypeId=0xff00]
+						ElementEnd
+						ElementStart [TypeId=0xffa6, Flags=0x00]
+							PropertyWithConverter [AttributeId=0xfff3, Value="Auto", ConverterTypeId=0xff00]
+						ElementEnd
+					PropertyListEnd
+					ContentProperty [AttributeId=0xff2b]
+					ElementStart [TypeId=0x0002, Flags=0x00]
+						PropertyWithConverter [AttributeId=0x0008, Value="ProductLogo.png", ConverterTypeId=0xfd99]
+						PropertyWithConverter [AttributeId=0xffd0, Value="Left", ConverterTypeId=0xff3d]
+						PropertyWithConverter [AttributeId=0xffc7, Value="60", ConverterTypeId=0xfea4]
+						PropertyWithConverter [AttributeId=0xffd1, Value="60", ConverterTypeId=0xfea4]
+					ElementEnd
+					ElementStart [TypeId=0xff02, Flags=0x00]
+						ConnectionId [ConnectionId=0x00000003]
+						PropertyWithConverter [AttributeId=0x0007, Value="mProductTextGrid", ConverterTypeId=0xfd99]
+						PropertyWithConverter [AttributeId=0xffc3, Value="1", ConverterTypeId=0xfec5]
+						PropertyWithConverter [AttributeId=0xffcf, Value="20,0,0,0", ConverterTypeId=0xfd71]
+						PropertyWithConverter [AttributeId=0xffd0, Value="Left", ConverterTypeId=0xff3d]
+						PropertyWithConverter [AttributeId=0xffc8, Value="Center", ConverterTypeId=0xff3d]
+						PropertyListStart [AttributeId=0x0003]
+							ElementStart [TypeId=0xfde3, Flags=0x00]
+								PropertyWithConverter [AttributeId=0xffa2, Value="Auto", ConverterTypeId=0xff00]
+							ElementEnd
+							ElementStart [TypeId=0xfde3, Flags=0x00]
+								PropertyWithConverter [AttributeId=0xffa2, Value="*", ConverterTypeId=0xff00]
+							ElementEnd
+						PropertyListEnd
+						ContentProperty [AttributeId=0xff2b]
+						ElementStart [TypeId=0xfea6, Flags=0x00]
+							PropertyWithConverter [AttributeId=0xffc8, Value="Stretch", ConverterTypeId=0xff3d]
+							PropertyWithConverter [AttributeId=0xffc1, Value="0", ConverterTypeId=0xfec5]
+							PropertyWithConverter [AttributeId=0xffe5, Value="NeoSans", ConverterTypeId=0xff29]
+							PropertyWithConverter [AttributeId=0xffe4, Value="22", ConverterTypeId=0xff28]
+							PropertyWithConverter [AttributeId=0xffdd, Value="0", ConverterTypeId=0xfd71]
+							PropertyComplexStart [AttributeId=0xfff2]
+								ElementStart [TypeId=0xffec, Flags=0x00]
+									PropertyWithConverter [AttributeId=0x0005, Value="LocaleModel.[BlueStacks]", ConverterTypeId=0xfe14]
+									PropertyWithConverter [AttributeId=0x0006, Value="BlueStacks", ConverterTypeId=0xfd99]
+								ElementEnd
+							PropertyComplexEnd
+							PropertyComplexStart [AttributeId=0xffe0]
+								ElementStart [TypeId=0xffec, Flags=0x00]
+									PropertyWithConverter [AttributeId=0x0005, Value="ColorModel.[SettingsWindowForegroundDimColor]", ConverterTypeId=0xfe14]
+								ElementEnd
+							PropertyComplexEnd
+						ElementEnd
+						ElementStart [TypeId=0xfea6, Flags=0x00]
+							ConnectionId [ConnectionId=0x00000004]
+							AttributeInfo [AttributeId=0x000a, OwnerTypeId=0xfea6, AttributeUsage=0x03, Name="Name"]
+							PropertyWithConverter [AttributeId=0x000a, Value="mVersionLabel", ConverterTypeId=0xfd99]
+							PropertyWithConverter [AttributeId=0xffc8, Value="Top", ConverterTypeId=0xff3d]
+							PropertyWithConverter [AttributeId=0xffc1, Value="1", ConverterTypeId=0xfec5]
+							PropertyWithConverter [AttributeId=0xffe4, Value="14", ConverterTypeId=0xff28]
+							PropertyWithConverter [AttributeId=0xffdd, Value="0", ConverterTypeId=0xfd71]
+							PropertyComplexStart [AttributeId=0xffe0]
+								ElementStart [TypeId=0xffec, Flags=0x00]
+									PropertyWithConverter [AttributeId=0x0005, Value="ColorModel.[SettingsWindowTabMenuItemForeground]", ConverterTypeId=0xfe14]
+								ElementEnd
+							PropertyComplexEnd
+						ElementEnd
+					ElementEnd
+				ElementEnd
+			ElementEnd
+			ElementStart [TypeId=0xff02, Flags=0x00]
+				PropertyWithConverter [AttributeId=0xffc1, Value="2", ConverterTypeId=0xfec5]
+				PropertyListStart [AttributeId=0x0003]
+					ElementStart [TypeId=0xfde3, Flags=0x00]
+						PropertyWithConverter [AttributeId=0xffa2, Value="Auto", ConverterTypeId=0xff00]
+					ElementEnd
+					ElementStart [TypeId=0xfde3, Flags=0x00]
+						PropertyWithConverter [AttributeId=0xffa2, Value="*", ConverterTypeId=0xff00]
+					ElementEnd
+					ElementStart [TypeId=0xfde3, Flags=0x00]
+						PropertyWithConverter [AttributeId=0xffa2, Value="Auto", ConverterTypeId=0xff00]
+					ElementEnd
+				PropertyListEnd
+				ContentProperty [AttributeId=0xff2b]
+				ElementStart [TypeId=0xfea2, Flags=0x00]
+					PropertyWithConverter [AttributeId=0xffc1, Value="0", ConverterTypeId=0xfec5]
+					AttributeInfo [AttributeId=0x000b, OwnerTypeId=0xfea2, AttributeUsage=0x00, Name="X1"]
+					PropertyWithConverter [AttributeId=0x000b, Value="0", ConverterTypeId=0xfea4]
+					AttributeInfo [AttributeId=0x000c, OwnerTypeId=0xfea2, AttributeUsage=0x00, Name="Y1"]
+					PropertyWithConverter [AttributeId=0x000c, Value="0", ConverterTypeId=0xfea4]
+					AttributeInfo [AttributeId=0x000d, OwnerTypeId=0xfea2, AttributeUsage=0x00, Name="X2"]
+					PropertyWithConverter [AttributeId=0x000d, Value="500", ConverterTypeId=0xfea4]
+					AttributeInfo [AttributeId=0x000e, OwnerTypeId=0xfea2, AttributeUsage=0x00, Name="Y2"]
+					PropertyWithConverter [AttributeId=0x000e, Value="0", ConverterTypeId=0xfea4]
+					PropertyWithConverter [AttributeId=0xffcf, Value="0,30,0,15", ConverterTypeId=0xfd71]
+					PropertyWithConverter [AttributeId=0xff9a, Value="1", ConverterTypeId=0xfea4]
+					AttributeInfo [AttributeId=0x000f, OwnerTypeId=0xfd4a, AttributeUsage=0x00, Name="Opacity"]
+					PropertyWithConverter [AttributeId=0x000f, Value="0.5", ConverterTypeId=0xff51]
+					PropertyComplexStart [AttributeId=0xff9b]
+						ElementStart [TypeId=0xffec, Flags=0x00]
+							PropertyWithConverter [AttributeId=0x0005, Value="ColorModel.[HorizontalSeparator]", ConverterTypeId=0xfe14]
+						ElementEnd
+					PropertyComplexEnd
+				ElementEnd
+				ElementStart [TypeId=0xff02, Flags=0x00]
+					PropertyWithConverter [AttributeId=0xffc1, Value="1", ConverterTypeId=0xfec5]
+					PropertyWithConverter [AttributeId=0xffc8, Value="Center", ConverterTypeId=0xff3d]
+					ContentProperty [AttributeId=0xff2b]
+					ElementStart [TypeId=0xff02, Flags=0x00]
+						ConnectionId [ConnectionId=0x00000005]
+						PropertyWithConverter [AttributeId=0x0007, Value="mUpdateInfoGrid", ConverterTypeId=0xfd99]
+						PropertyWithConverter [AttributeId=0xff79, Value="Collapsed", ConverterTypeId=0xff3d]
+						PropertyListStart [AttributeId=0x0009]
+							ElementStart [TypeId=0xffa6, Flags=0x00]
+								PropertyWithConverter [AttributeId=0xfff3, Value="60", ConverterTypeId=0xff00]
+							ElementEnd
+							ElementStart [TypeId=0xffa6, Flags=0x00]
+								PropertyWithConverter [AttributeId=0xfff3, Value="*", ConverterTypeId=0xff00]
+							ElementEnd
+						PropertyListEnd
+						ContentProperty [AttributeId=0xff2b]
+						ElementStart [TypeId=0x0002, Flags=0x00]
+							PropertyWithConverter [AttributeId=0xffc3, Value="0", ConverterTypeId=0xfec5]
+							PropertyWithConverter [AttributeId=0x0008, Value="update_icon_settings", ConverterTypeId=0xfd99]
+							PropertyWithConverter [AttributeId=0xffc8, Value="Center", ConverterTypeId=0xff3d]
+							PropertyWithConverter [AttributeId=0xffd0, Value="Center", ConverterTypeId=0xff3d]
+						ElementEnd
+						ElementStart [TypeId=0xfda7, Flags=0x00]
+							AttributeInfo [AttributeId=0x0010, OwnerTypeId=0xfda7, AttributeUsage=0x00, Name="Orientation"]
+							PropertyWithConverter [AttributeId=0x0010, Value="Vertical", ConverterTypeId=0xff3d]
+							PropertyWithConverter [AttributeId=0xffd0, Value="Left", ConverterTypeId=0xff3d]
+							PropertyWithConverter [AttributeId=0xffc8, Value="Top", ConverterTypeId=0xff3d]
+							PropertyWithConverter [AttributeId=0xffc3, Value="1", ConverterTypeId=0xfec5]
+							PropertyWithConverter [AttributeId=0xffcf, Value="15,0,0,0", ConverterTypeId=0xfd71]
+							ContentProperty [AttributeId=0xff2b]
+							ElementStart [TypeId=0xfea6, Flags=0x00]
+								ConnectionId [ConnectionId=0x00000006]
+								PropertyWithConverter [AttributeId=0x000a, Value="bodyLabel", ConverterTypeId=0xfd99]
+								PropertyWithConverter [AttributeId=0xffe4, Value="14", ConverterTypeId=0xff28]
+								PropertyWithConverter [AttributeId=0xffe1, Value="Medium", ConverterTypeId=0xff22]
+								PropertyComplexStart [AttributeId=0xffe0]
+									ElementStart [TypeId=0xffec, Flags=0x00]
+										PropertyWithConverter [AttributeId=0x0005, Value="ColorModel.[SettingsWindowTabMenuItemForeground]", ConverterTypeId=0xfe14]
+									ElementEnd
+								PropertyComplexEnd
+								PropertyComplexStart [AttributeId=0xfff2]
+									ElementStart [TypeId=0xffec, Flags=0x00]
+										PropertyWithConverter [AttributeId=0x0005, Value="LocaleModel.[STRING_UPDATE_AVAILABLE]", ConverterTypeId=0xfe14]
+										PropertyWithConverter [AttributeId=0x0006, Value="Update available", ConverterTypeId=0xfd99]
+									ElementEnd
+								PropertyComplexEnd
+							ElementEnd
+							ElementStart [TypeId=0xfea6, Flags=0x00]
+								ConnectionId [ConnectionId=0x00000007]
+								PropertyWithConverter [AttributeId=0x000a, Value="mLabelVersion", ConverterTypeId=0xfd99]
+								PropertyWithConverter [AttributeId=0xffe4, Value="13", ConverterTypeId=0xff28]
+								PropertyWithConverter [AttributeId=0xffdd, Value="5,0,0,0", ConverterTypeId=0xfd71]
+								PropertyWithConverter [AttributeId=0xffe1, Value="Light", ConverterTypeId=0xff22]
+								PropertyComplexStart [AttributeId=0xffe0]
+									ElementStart [TypeId=0xffec, Flags=0x00]
+										PropertyWithConverter [AttributeId=0x0005, Value="ColorModel.[SettingsWindowTabMenuItemForeground]", ConverterTypeId=0xfe14]
+									ElementEnd
+								PropertyComplexEnd
+							ElementEnd
+							ElementStart [TypeId=0xfea6, Flags=0x00]
+								PropertyWithConverter [AttributeId=0xffe4, Value="13", ConverterTypeId=0xff28]
+								PropertyWithConverter [AttributeId=0xffdd, Value="5,0,0,0", ConverterTypeId=0xfd71]
+								PropertyWithConverter [AttributeId=0xffcf, Value="0,5,0,0", ConverterTypeId=0xfd71]
+								PropertyComplexStart [AttributeId=0xffe0]
+									ElementStart [TypeId=0xffec, Flags=0x00]
+										PropertyWithConverter [AttributeId=0x0005, Value="ColorModel.[SettingsWindowTabMenuItemForeground]", ConverterTypeId=0xfe14]
+									ElementEnd
+								PropertyComplexEnd
+								ContentProperty [AttributeId=0xfff2]
+								ElementStart [TypeId=0xfeef, Flags=0x00]
+									ConnectionId [ConnectionId=0x00000008]
+									AttributeInfo [AttributeId=0x0011, OwnerTypeId=0xfeef, AttributeUsage=0x03, Name="Name"]
+									PropertyWithConverter [AttributeId=0x0011, Value="mDetailedChangeLogs", ConverterTypeId=0xfd99]
+									StringInfo [StringId=0x0000, Value="HyperlinkStyle"]
+									PropertyWithExtension [AttributeId=0xffd3, Flags=0x025b, ValueId=0x0000]
+								ElementEnd
+							ElementEnd
+						ElementEnd
+					ElementEnd
+					TypeInfo [TypeId=0x0003, AssemblyId=0x0001, TypeFullName="BlueStacks.Common.CustomButton"]
+					ElementStart [TypeId=0x0003, Flags=0x00]
+						ConnectionId [ConnectionId=0x00000009]
+						AttributeInfo [AttributeId=0x0012, OwnerTypeId=0x0003, AttributeUsage=0x03, Name="Name"]
+						PropertyWithConverter [AttributeId=0x0012, Value="mCheckUpdateBtn", ConverterTypeId=0xfd99]
+						AttributeInfo [AttributeId=0x0013, OwnerTypeId=0x0003, AttributeUsage=0x00, Name="ButtonColor"]
+						PropertyWithConverter [AttributeId=0x0013, Value="Blue", ConverterTypeId=0xff3d]
+						PropertyWithConverter [AttributeId=0xffd0, Value="Left", ConverterTypeId=0xff3d]
+						PropertyWithConverter [AttributeId=0xffc8, Value="Center", ConverterTypeId=0xff3d]
+						PropertyComplexStart [AttributeId=0xfff2]
+							ElementStart [TypeId=0xffec, Flags=0x00]
+								PropertyWithConverter [AttributeId=0x0005, Value="LocaleModel.[STRING_CHECK_UPDATES]", ConverterTypeId=0xfe14]
+								PropertyWithConverter [AttributeId=0x0006, Value="Check for updates", ConverterTypeId=0xfd99]
+							ElementEnd
+						PropertyComplexEnd
+					ElementEnd
+					ElementStart [TypeId=0xfd82, Flags=0x00]
+						ConnectionId [ConnectionId=0x0000000a]
+						AttributeInfo [AttributeId=0x0014, OwnerTypeId=0xfd82, AttributeUsage=0x03, Name="Name"]
+						PropertyWithConverter [AttributeId=0x0014, Value="mStatusLabel", ConverterTypeId=0xfd99]
+						PropertyWithConverter [AttributeId=0xffcd, Value="325", ConverterTypeId=0xfea4]
+						PropertyWithConverter [AttributeId=0xff79, Value="Collapsed", ConverterTypeId=0xff3d]
+						PropertyWithConverter [AttributeId=0xffd0, Value="Left", ConverterTypeId=0xff3d]
+						PropertyWithConverter [AttributeId=0xffc8, Value="Center", ConverterTypeId=0xff3d]
+						PropertyWithConverter [AttributeId=0xff97, Value="14", ConverterTypeId=0xff28]
+						PropertyWithConverter [AttributeId=0xff8f, Value="WrapWithOverflow", ConverterTypeId=0xff3d]
+						PropertyComplexStart [AttributeId=0xff93]
+							ElementStart [TypeId=0xffec, Flags=0x00]
+								PropertyWithConverter [AttributeId=0x0005, Value="ColorModel.[SettingsWindowTabMenuItemForeground]", ConverterTypeId=0xfe14]
+							ElementEnd
+						PropertyComplexEnd
+						PropertyComplexStart [AttributeId=0xff92]
+							ElementStart [TypeId=0xffec, Flags=0x00]
+								PropertyWithConverter [AttributeId=0x0005, Value="LocaleModel.[STRING_LATEST_VERSION]", ConverterTypeId=0xfe14]
+								PropertyWithConverter [AttributeId=0x0006, Value="You are on the latest version", ConverterTypeId=0xfd99]
+							ElementEnd
+						PropertyComplexEnd
+					ElementEnd
+					ElementStart [TypeId=0xff02, Flags=0x00]
+						ConnectionId [ConnectionId=0x0000000b]
+						PropertyWithConverter [AttributeId=0x0007, Value="mCheckingGrid", ConverterTypeId=0xfd99]
+						PropertyWithConverter [AttributeId=0xffd0, Value="Left", ConverterTypeId=0xff3d]
+						PropertyWithConverter [AttributeId=0xffc8, Value="Center", ConverterTypeId=0xff3d]
+						PropertyWithConverter [AttributeId=0xff79, Value="Collapsed", ConverterTypeId=0xff3d]
+						PropertyListStart [AttributeId=0x0009]
+							ElementStart [TypeId=0xffa6, Flags=0x00]
+								PropertyWithConverter [AttributeId=0xfff3, Value="20", ConverterTypeId=0xff00]
+							ElementEnd
+							ElementStart [TypeId=0xffa6, Flags=0x00]
+								PropertyWithConverter [AttributeId=0xfff3, Value="Auto", ConverterTypeId=0xff00]
+							ElementEnd
+						PropertyListEnd
+						ContentProperty [AttributeId=0xff2b]
+						ElementStart [TypeId=0x0002, Flags=0x00]
+							PropertyWithConverter [AttributeId=0xffc3, Value="0", ConverterTypeId=0xfec5]
+							PropertyWithConverter [AttributeId=0x0008, Value="loading", ConverterTypeId=0xfd99]
+							AttributeInfo [AttributeId=0x0015, OwnerTypeId=0x0002, AttributeUsage=0x00, Name="IsImageToBeRotated"]
+							PropertyCustom [AttributeId=0x0015, SerializerTypeId=0x002e, Data=01]
+						ElementEnd
+						ElementStart [TypeId=0xfea6, Flags=0x00]
+							PropertyWithConverter [AttributeId=0xffc3, Value="1", ConverterTypeId=0xfec5]
+							PropertyWithConverter [AttributeId=0xffcf, Value="5,0,0,0", ConverterTypeId=0xfd71]
+							PropertyWithConverter [AttributeId=0xffe4, Value="14", ConverterTypeId=0xff28]
+							PropertyComplexStart [AttributeId=0xffe0]
+								ElementStart [TypeId=0xffec, Flags=0x00]
+									PropertyWithConverter [AttributeId=0x0005, Value="ColorModel.[SettingsWindowTabMenuItemForeground]", ConverterTypeId=0xfe14]
+								ElementEnd
+							PropertyComplexEnd
+							PropertyComplexStart [AttributeId=0xfff2]
+								ElementStart [TypeId=0xffec, Flags=0x00]
+									PropertyWithConverter [AttributeId=0x0005, Value="LocaleModel.[STRING_CHECKING_UPDATES]", ConverterTypeId=0xfe14]
+									PropertyWithConverter [AttributeId=0x0006, Value="Checking for updates", ConverterTypeId=0xfd99]
+								ElementEnd
+							PropertyComplexEnd
+						ElementEnd
+					ElementEnd
+				ElementEnd
+				ElementStart [TypeId=0xfea2, Flags=0x00]
+					PropertyWithConverter [AttributeId=0xffc1, Value="2", ConverterTypeId=0xfec5]
+					PropertyWithConverter [AttributeId=0x000b, Value="0", ConverterTypeId=0xfea4]
+					PropertyWithConverter [AttributeId=0x000c, Value="0", ConverterTypeId=0xfea4]
+					PropertyWithConverter [AttributeId=0x000d, Value="500", ConverterTypeId=0xfea4]
+					PropertyWithConverter [AttributeId=0x000e, Value="0", ConverterTypeId=0xfea4]
+					PropertyWithConverter [AttributeId=0xffcf, Value="0,15,0,30", ConverterTypeId=0xfd71]
+					PropertyWithConverter [AttributeId=0xff9a, Value="1", ConverterTypeId=0xfea4]
+					PropertyWithConverter [AttributeId=0x000f, Value="0.5", ConverterTypeId=0xff51]
+					PropertyComplexStart [AttributeId=0xff9b]
+						ElementStart [TypeId=0xffec, Flags=0x00]
+							PropertyWithConverter [AttributeId=0x0005, Value="ColorModel.[HorizontalSeparator]", ConverterTypeId=0xfe14]
+						ElementEnd
+					PropertyComplexEnd
+				ElementEnd
+			ElementEnd
+			ElementStart [TypeId=0xff02, Flags=0x00]
+				ConnectionId [ConnectionId=0x0000000c]
+				PropertyWithConverter [AttributeId=0xffca, Value="ContactInfoGrid", ConverterTypeId=0xfd99]
+				PropertyWithConverter [AttributeId=0xffc1, Value="3", ConverterTypeId=0xfec5]
+				PropertyListStart [AttributeId=0x0003]
+					ElementStart [TypeId=0xfde3, Flags=0x00]
+						PropertyWithConverter [AttributeId=0xffa2, Value="Auto", ConverterTypeId=0xff00]
+					ElementEnd
+					ElementStart [TypeId=0xfde3, Flags=0x00]
+						PropertyWithConverter [AttributeId=0xffa2, Value="Auto", ConverterTypeId=0xff00]
+					ElementEnd
+					ElementStart [TypeId=0xfde3, Flags=0x00]
+						PropertyWithConverter [AttributeId=0xffa2, Value="Auto", ConverterTypeId=0xff00]
+					ElementEnd
+				PropertyListEnd
+				ContentProperty [AttributeId=0xff2b]
+				ElementStart [TypeId=0xff02, Flags=0x00]
+					PropertyWithConverter [AttributeId=0xffc1, Value="0", ConverterTypeId=0xfec5]
+					PropertyListStart [AttributeId=0x0009]
+						ElementStart [TypeId=0xffa6, Flags=0x00]
+							PropertyWithConverter [AttributeId=0xfff3, Value="Auto", ConverterTypeId=0xff00]
+						ElementEnd
+						ElementStart [TypeId=0xffa6, Flags=0x00]
+							PropertyWithConverter [AttributeId=0xfff3, Value="Auto", ConverterTypeId=0xff00]
+						ElementEnd
+					PropertyListEnd
+					ContentProperty [AttributeId=0xff2b]
+					ElementStart [TypeId=0xfea6, Flags=0x00]
+						ConnectionId [ConnectionId=0x0000000d]
+						PropertyWithConverter [AttributeId=0x000a, Value="mWebsiteLabel", ConverterTypeId=0xfd99]
+						PropertyWithConverter [AttributeId=0xffd0, Value="Left", ConverterTypeId=0xff3d]
+						PropertyWithConverter [AttributeId=0xffdd, Value="0", ConverterTypeId=0xfd71]
+						PropertyWithConverter [AttributeId=0xffe4, Value="14", ConverterTypeId=0xff28]
+						PropertyWithConverter [AttributeId=0xfff2, Value="Website - ", ConverterTypeId=0xfd99]
+						PropertyComplexStart [AttributeId=0xffe0]
+							ElementStart [TypeId=0xffec, Flags=0x00]
+								PropertyWithConverter [AttributeId=0x0005, Value="ColorModel.[SettingsWindowTabMenuItemForeground]", ConverterTypeId=0xfe14]
+							ElementEnd
+						PropertyComplexEnd
+					ElementEnd
+					ElementStart [TypeId=0xfea6, Flags=0x00]
+						PropertyWithConverter [AttributeId=0xffc3, Value="1", ConverterTypeId=0xfec5]
+						PropertyWithConverter [AttributeId=0xffd0, Value="Left", ConverterTypeId=0xff3d]
+						PropertyWithConverter [AttributeId=0xffcf, Value="5,0,0,0", ConverterTypeId=0xfd71]
+						PropertyWithConverter [AttributeId=0xffdd, Value="0", ConverterTypeId=0xfd71]
+						PropertyWithConverter [AttributeId=0xffe4, Value="14", ConverterTypeId=0xff28]
+						PropertyComplexStart [AttributeId=0xffe0]
+							ElementStart [TypeId=0xffec, Flags=0x00]
+								PropertyWithConverter [AttributeId=0x0005, Value="ColorModel.[SettingsWindowTabMenuItemForeground]", ConverterTypeId=0xfe14]
+							ElementEnd
+						PropertyComplexEnd
+						ContentProperty [AttributeId=0xfff2]
+						ElementStart [TypeId=0xfeef, Flags=0x00]
+							ConnectionId [ConnectionId=0x0000000e]
+							PropertyWithConverter [AttributeId=0xffb6, Value="https://sites.google.com/view/hieugllite", ConverterTypeId=0xfd3f]
+							PropertyWithExtension [AttributeId=0xffd3, Flags=0x025b, ValueId=0x0000]
+							ContentProperty [AttributeId=0xff18]
+							Text [Value="Click here"]
+						ElementEnd
+					ElementEnd
+				ElementEnd
+				ElementStart [TypeId=0xff02, Flags=0x00]
+					PropertyWithConverter [AttributeId=0xffc1, Value="1", ConverterTypeId=0xfec5]
+					PropertyListStart [AttributeId=0x0009]
+						ElementStart [TypeId=0xffa6, Flags=0x00]
+							PropertyWithConverter [AttributeId=0xfff3, Value="Auto", ConverterTypeId=0xff00]
+						ElementEnd
+						ElementStart [TypeId=0xffa6, Flags=0x00]
+							PropertyWithConverter [AttributeId=0xfff3, Value="Auto", ConverterTypeId=0xff00]
+						ElementEnd
+					PropertyListEnd
+					ContentProperty [AttributeId=0xff2b]
+					ElementStart [TypeId=0xfea6, Flags=0x00]
+						ConnectionId [ConnectionId=0x0000000f]
+						PropertyWithConverter [AttributeId=0x000a, Value="mSupportLabel", ConverterTypeId=0xfd99]
+						PropertyWithConverter [AttributeId=0xffd0, Value="Left", ConverterTypeId=0xff3d]
+						PropertyWithConverter [AttributeId=0xffdd, Value="0", ConverterTypeId=0xfd71]
+						PropertyWithConverter [AttributeId=0xffe4, Value="14", ConverterTypeId=0xff28]
+						PropertyWithConverter [AttributeId=0xfff2, Value="Support - ", ConverterTypeId=0xfd99]
+						PropertyComplexStart [AttributeId=0xffe0]
+							ElementStart [TypeId=0xffec, Flags=0x00]
+								PropertyWithConverter [AttributeId=0x0005, Value="ColorModel.[SettingsWindowTabMenuItemForeground]", ConverterTypeId=0xfe14]
+							ElementEnd
+						PropertyComplexEnd
+					ElementEnd
+					ElementStart [TypeId=0xfea6, Flags=0x00]
+						PropertyWithConverter [AttributeId=0xffc3, Value="1", ConverterTypeId=0xfec5]
+						PropertyWithConverter [AttributeId=0xffd0, Value="Left", ConverterTypeId=0xff3d]
+						PropertyWithConverter [AttributeId=0xffcf, Value="5,0,0,0", ConverterTypeId=0xfd71]
+						PropertyWithConverter [AttributeId=0xffe4, Value="14", ConverterTypeId=0xff28]
+						PropertyWithConverter [AttributeId=0xffdd, Value="0", ConverterTypeId=0xfd71]
+						PropertyComplexStart [AttributeId=0xffe0]
+							ElementStart [TypeId=0xffec, Flags=0x00]
+								PropertyWithConverter [AttributeId=0x0005, Value="ColorModel.[SettingsWindowTabMenuItemForeground]", ConverterTypeId=0xfe14]
+							ElementEnd
+						PropertyComplexEnd
+						ContentProperty [AttributeId=0xfff2]
+						ElementStart [TypeId=0xfeef, Flags=0x00]
+							ConnectionId [ConnectionId=0x00000010]
+							PropertyWithConverter [AttributeId=0xffb6, Value="https://support.bluestacks.com", ConverterTypeId=0xfd3f]
+							PropertyWithExtension [AttributeId=0xffd3, Flags=0x025b, ValueId=0x0000]
+							ContentProperty [AttributeId=0xff18]
+							Text [Value="support.bluestacks.com"]
+						ElementEnd
+					ElementEnd
+				ElementEnd
+				ElementStart [TypeId=0xff02, Flags=0x00]
+					PropertyWithConverter [AttributeId=0xffc1, Value="2", ConverterTypeId=0xfec5]
+					PropertyListStart [AttributeId=0x0009]
+						ElementStart [TypeId=0xffa6, Flags=0x00]
+							PropertyWithConverter [AttributeId=0xfff3, Value="Auto", ConverterTypeId=0xff00]
+						ElementEnd
+						ElementStart [TypeId=0xffa6, Flags=0x00]
+							PropertyWithConverter [AttributeId=0xfff3, Value="Auto", ConverterTypeId=0xff00]
+						ElementEnd
+					PropertyListEnd
+					ContentProperty [AttributeId=0xff2b]
+					ElementStart [TypeId=0xfea6, Flags=0x00]
+						ConnectionId [ConnectionId=0x00000011]
+						PropertyWithConverter [AttributeId=0x000a, Value="mSupportMailLabel", ConverterTypeId=0xfd99]
+						PropertyWithConverter [AttributeId=0xffd0, Value="Left", ConverterTypeId=0xff3d]
+						PropertyWithConverter [AttributeId=0xffdd, Value="0", ConverterTypeId=0xfd71]
+						PropertyWithConverter [AttributeId=0xffe4, Value="14", ConverterTypeId=0xff28]
+						PropertyWithConverter [AttributeId=0xfff2, Value="Support e-mail - ", ConverterTypeId=0xfd99]
+						PropertyComplexStart [AttributeId=0xffe0]
+							ElementStart [TypeId=0xffec, Flags=0x00]
+								PropertyWithConverter [AttributeId=0x0005, Value="ColorModel.[SettingsWindowTabMenuItemForeground]", ConverterTypeId=0xfe14]
+							ElementEnd
+						PropertyComplexEnd
+					ElementEnd
+					ElementStart [TypeId=0xfea6, Flags=0x00]
+						PropertyWithConverter [AttributeId=0xffc3, Value="1", ConverterTypeId=0xfec5]
+						PropertyWithConverter [AttributeId=0xffd0, Value="Left", ConverterTypeId=0xff3d]
+						PropertyWithConverter [AttributeId=0xffcf, Value="5,0,0,0", ConverterTypeId=0xfd71]
+						PropertyWithConverter [AttributeId=0xffdd, Value="0", ConverterTypeId=0xfd71]
+						PropertyWithConverter [AttributeId=0xffe4, Value="14", ConverterTypeId=0xff28]
+						PropertyComplexStart [AttributeId=0xffe0]
+							ElementStart [TypeId=0xffec, Flags=0x00]
+								PropertyWithConverter [AttributeId=0x0005, Value="ColorModel.[SettingsWindowTabMenuItemForeground]", ConverterTypeId=0xfe14]
+							ElementEnd
+						PropertyComplexEnd
+						ContentProperty [AttributeId=0xfff2]
+						ElementStart [TypeId=0xfeef, Flags=0x00]
+							ConnectionId [ConnectionId=0x00000012]
+							PropertyWithConverter [AttributeId=0x0011, Value="mSupportEMailHyperlink", ConverterTypeId=0xfd99]
+							PropertyWithExtension [AttributeId=0xffd3, Flags=0x025b, ValueId=0x0000]
+							PropertyWithConverter [AttributeId=0xffb6, Value="mailto:support@bluestacks.com", ConverterTypeId=0xfd3f]
+							ContentProperty [AttributeId=0xff18]
+							Text [Value="support@bluestacks.com"]
+						ElementEnd
+					ElementEnd
+				ElementEnd
+			ElementEnd
+			ElementStart [TypeId=0xfd82, Flags=0x00]
+				ConnectionId [ConnectionId=0x00000013]
+				PropertyWithConverter [AttributeId=0x0014, Value="mTermsOfUse", ConverterTypeId=0xfd99]
+				PropertyWithConverter [AttributeId=0xffc1, Value="4", ConverterTypeId=0xfec5]
+				PropertyWithConverter [AttributeId=0xffcf, Value="0,15,0,0", ConverterTypeId=0xfd71]
+				PropertyWithConverter [AttributeId=0xffc7, Value="500", ConverterTypeId=0xfea4]
+				PropertyWithConverter [AttributeId=0xff8f, Value="WrapWithOverflow", ConverterTypeId=0xff3d]
+				PropertyWithConverter [AttributeId=0xffd0, Value="Left", ConverterTypeId=0xff3d]
+				PropertyWithConverter [AttributeId=0xff97, Value="14", ConverterTypeId=0xff28]
+				PropertyComplexStart [AttributeId=0xff92]
+					ElementStart [TypeId=0xffec, Flags=0x00]
+						PropertyWithConverter [AttributeId=0x0005, Value="LocaleModel.[STRING_TERMS_OF_USE]", ConverterTypeId=0xfe14]
+						AttributeInfo [AttributeId=0x0016, OwnerTypeId=0xffeb, AttributeUsage=0x00, Name="StringFormat"]
+						PropertyWithConverter [AttributeId=0x0016, Value="{0} ", ConverterTypeId=0xfd99]
+					ElementEnd
+				PropertyComplexEnd
+				PropertyComplexStart [AttributeId=0xff93]
+					ElementStart [TypeId=0xffec, Flags=0x00]
+						PropertyWithConverter [AttributeId=0x0005, Value="ColorModel.[SettingsWindowTabMenuItemForeground]", ConverterTypeId=0xfe14]
+					ElementEnd
+				PropertyComplexEnd
+				ElementStart [TypeId=0xfeef, Flags=0x00]
+					ConnectionId [ConnectionId=0x00000014]
+					PropertyWithConverter [AttributeId=0x0011, Value="mTermsOfUseLink", ConverterTypeId=0xfd99]
+					PropertyWithExtension [AttributeId=0xffd3, Flags=0x025b, ValueId=0x0000]
+					ContentProperty [AttributeId=0xff18]
+					Text [Value="Terms of Use"]
+				ElementEnd
+			ElementEnd
+		ElementEnd
+	ElementEnd
+DocumentEnd

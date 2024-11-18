@@ -18,14 +18,14 @@ goto :EOF
 
 :GetPFDir
 REM Get Program Files's BlueStacks Directory
-set "PFDir=%ProgramFiles%\%oem%"
+set "PFDir=""%ProgramFiles%"\%oem%""
 goto :EOF
 
 :GetUnlockStatus
 
 REM Get system file info to decide
 
-"%ProgramFiles%\BlueStacks_nxt\BstkVMMgr.exe" showmediuminfo "%ProgramData%\BlueStacks_nxt\Engine\Nougat32\Root.vhd" > "%~dp0Temp\temp.txt"
+"%PFDir%\BstkVMMgr.exe" showmediuminfo "%PDDir%\Engine\%OS%\Root.vhd" > "%~dp0Temp\temp.txt"
 
 for /f "tokens=2 delims=:" %%a in ('type "%~dp0Temp\temp.txt" ^| findstr /C:"Type"') do (
     set "typeValue=%%a"
@@ -64,6 +64,7 @@ cd /d %~dp0
 
 set BIN=%~dp0bin
 
+Set "UnlockHelper=%BIN%\UnlockHelper.exe"
 set "AndroidTool=%BIN%\platform-tools"
 set "adb=%AndroidTool%\adb.exe"
 set "pwshfolder=%BIN%\PowerShell"
@@ -107,11 +108,11 @@ set "goafter=:SelEmu"
 call :CreUI
 Echo   Please select an emulator to continue!
 echo.
-echo   [1] BlueStacks 5 (Version 5.20+) (Active)
-echo   [2] BlueStacks 5 (Comming soon)
-echo   [3] BlueStacks 4 (Comming soon)
-echo   [4] MSI App Player 5 (Comming soon)
-echo   [5] MSI App Player 4 (Comming soon)
+echo   [1] BlueStacks 5 (Active)
+echo   [2] BlueStacks 4 (Comming soon)
+echo   [3] MSI App Player 5 (Comming soon)
+echo   [4] MSI App Player 4 (Comming soon)
+echo.
 echo.
 echo.
 echo.
@@ -147,16 +148,13 @@ call :GetPDDir
 call :GetPFDir
 call :GetVersion
 
-if exist %VerNumber% GEQ 20 (
-  goto :SelOS
-) else (
-  goto :BS_ulk_req
-)
+if not exist %PFDir% goto :NotInstalled
+Goto :SelOS
 
 ::Select OS of Emulator
 :SelOS
 cls
-title %AppName%
+title %AppName% - %EmuName%
 set "goafter=:SelOS"
 call :CreUI
 echo   Selected emulator: %EmuName%
@@ -170,7 +168,7 @@ echo   Please select the operating system you have installed!
 echo.
 echo   [1] Android 7 32-bit (Nougat32)
 echo   [2] Android 7 64-bit (Nougat64) (Not supported yet)
-echo   [3] Android 9 64-bit (Pie64)
+echo   [3] Android 9 64-bit (Pie64) (Not supported yet)
 echo   [4] Android 11 64-bit (Rvc64) (Not supported yet)
 echo.
 echo.
@@ -196,9 +194,9 @@ set "OSName=Android 7 32-bit"
 goto :ToolkitMenu
 
 
-
 :ToolkitMenu
 set "goafter=:ToolkitMenu"
+title %AppName% - %EmuName% - %OSName%
 cls
 call :CreUI
 echo   Selected emulator: %EmuName%
@@ -245,10 +243,7 @@ if %Unlock%==0 (
   goto :UnlockBackup
 )
 
-
-
 :UnlockBackup
-pause
 cls
 call :CreUI
 echo   Selected emulator: %EmuName%
@@ -278,12 +273,14 @@ echo %line%
 choice /c:12X /n /m "Enter your choice: "
 if errorlevel 3 goto :ToolkitMenu
 if errorlevel 2 (
-  set "backup=-no-backup"
-  set "SetRW=Unlock"
+  set "backup=--no-backup"
+  set "SetRW=-Unlock"
+  goto :UnlockHelperProcess
 )
 if errorlevel 1 (
-  set "backup=-backup"
-  set "SetRW=Unlock"
+  set "backup=--backup"
+  set "SetRW=-Unlock"
+  goto :UnlockHelperProcess
 )
 
 :LockBackup
@@ -300,10 +297,10 @@ echo %line%
 echo.
 echo   Do you want to restore system files?
 echo   If you select yes, any changes you make to system files will revert to their original state
+echo   If you choose no, the backup copy of the system files will be deleted.
 echo.
 echo   [1] Yes
 echo   [2] No
-echo.
 echo.
 echo.
 echo.
@@ -316,17 +313,38 @@ echo %line%
 choice /c:12X /n /m "Enter your choice: "
 if errorlevel 3 goto :ToolkitMenu
 if errorlevel 2 (
-  set "backup=-no-backup"
-  set "SetRW=Lock"
+  set "backup=--no-backup"
+  set "SetRW=-Lock"
+  goto :UnlockHelperProcess
 )
 if errorlevel 1 (
-  set "backup=-backup"
-  set "SetRW=Lock"
+  set "backup=--backup"
+  set "SetRW=-Lock"
+  goto :UnlockHelperProcess
 )
 
-:
-
-
+:UnlockHelperProcess
+title %AppName% - %EmuName% - %OSName% - Processing...
+cls
+call :CreUI
+echo   Selected emulator: %EmuName%
+echo   Emulator version: %Version%
+echo   Program Data directory: %PDDir%
+echo   Program Files directory: %PFDir%
+echo   Selected operating system: %OSName%
+echo   Operating system path: %PDDir%\Engine\%OS%
+echo.
+echo %line%
+echo.
+echo   Do you want to start now?
+echo   [1] Yes - [2] No 
+choice /c:12 /n /m "Enter your choice: "
+if errorlevel 2 goto :ToolkitMenu
+if errorlevel 1 goto :StartUnlockHelperProcess
+:StartUnlockHelperProcess
+%UnlockHelper% %oem% %OS% %SetRW% %backup%
+pause
+goto :ToolkitMenu
 
 :Unavailable
 cls
@@ -339,6 +357,13 @@ goto %goafter%
 cls
 call :CreUI
 echo Please install/update to version 5.20 or higher to continue!
+timeout 5 /nobreak >nul
+goto %goafter%
+
+:NotInstalled
+cls
+call :CreUI
+echo Emulator or operating system not installed
 timeout 5 /nobreak >nul
 goto %goafter%
 
